@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:add_pwd_policy/Resources/Private/Language/locallang.xlf" date="2023-01-14T13:49:00Z">
+		<header/>
+		<body>
+			<trans-unit id="requirement.pwnedPassword" resname="requirement.pwnedPassword">
+				<source>Must not be part of a known data breach on haveibeenpwned.com</source>
+			</trans-unit>
+			<trans-unit id="error.pwnedPassword" resname="error.pwnedPassword">
+				<source>This password appeared in a data breach and is found %d times in the haveibeenpwned.com database. Please choose a different password.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
