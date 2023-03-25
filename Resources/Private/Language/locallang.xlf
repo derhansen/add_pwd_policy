@@ -9,6 +9,12 @@
 			<trans-unit id="error.pwnedPassword" resname="error.pwnedPassword">
 				<source>This password appeared in a data breach and is found %d times in the haveibeenpwned.com database. Please choose a different password.</source>
 			</trans-unit>
+			<trans-unit id="requirement.notUsername" resname="requirement.notUsername">
+				<source>Must not contain the username</source>
+			</trans-unit>
+			<trans-unit id="error.notUsername" resname="error.notUsername">
+				<source>The username must not be used in the password.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
