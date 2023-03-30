@@ -11,16 +11,33 @@ This extension for TYPO3 CMS contains additional Password Policy validators for 
 
 #### Description:
 
-This validator checks, if the given password is part of a known data breach on haveibeenpwned.com
+This validator ensures, that the given password is not part of a known data breach on haveibeenpwned.com
 
-#### Options: 
+#### Options:
 * none
 
-
-#### Usage example 
+#### Usage example
 
 ```
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['default']['validators'][\Derhansen\AddPwdPolicy\PasswordPolicy\Validator\PwnedPasswordValidator::class] = [
+    'options' => [],
+    'excludeActions' => [],
+];
+```
+
+### Does not contain username
+
+#### Description:
+
+This validator ensures, that the given password does not contain the users `username`.
+
+#### Options:
+* none
+
+#### Usage example
+
+```
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['default']['validators'][\Derhansen\AddPwdPolicy\PasswordPolicy\Validator\NotUsernameValidator::class] = [
     'options' => [],
     'excludeActions' => [],
 ];
