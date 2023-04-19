@@ -3,7 +3,10 @@
 **Note, that this extension is still under development and should not be used
 in production.**
 
-This extension for TYPO3 CMS contains additional Password Policy validators for usage in TYPO3 12+ projects.
+This extension for TYPO3 CMS contains additional Password Policy validators for
+usage in TYPO3 12+ projects. It also adds an event listener for the
+`EnrichPasswordValidationContextDataEvent` PSR-14 event, so the context data
+used for password validation is extended with the users email-address.
 
 ## Included validators
 

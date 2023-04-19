@@ -6,3 +6,9 @@ services:
 
     Derhansen\AddPwdPolicy\:
         resource: '../Classes/*'
+
+    Derhansen\AddPwdPolicy\EventListener\EnrichContextData:
+        tags:
+            - name: event.listener
+              identifier: 'add_pwd_policy.enrich_context_data'
+              event: TYPO3\CMS\Core\PasswordPolicy\Event\EnrichPasswordValidationContextDataEvent
