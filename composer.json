@@ -19,9 +19,10 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^12.1 || dev-main",
-    "typo3/cms-setup": "^12.1 || dev-main",
-    "typo3/cms-backend": "^12.1 || dev-main"
+    "typo3/cms-core": "^12.3 || dev-main",
+    "typo3/cms-setup": "^12.3 || dev-main",
+    "typo3/cms-backend": "^12.3 || dev-main",
+    "typo3/cms-felogin": "^12.3 || dev-main"
   },
   "require-dev": {
     "typo3/testing-framework": "~7.0@dev || dev-main",
