@@ -64,3 +64,10 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['default']['validators'][
     'excludeActions' => [],
 ];
 ```
+
+## Credits
+
+### Password file
+
+The included file with top 100.000 popular passwords has been downloaded
+from https://github.com/danielmiessler/SecLists
