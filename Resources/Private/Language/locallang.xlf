@@ -15,6 +15,12 @@
 			<trans-unit id="error.notUsername" resname="error.notUsername">
 				<source>The username must not be used in the password.</source>
 			</trans-unit>
+			<trans-unit id="requirement.passwordDenylist" resname="requirement.passwordDenylist">
+				<source>Must not be a denied password</source>
+			</trans-unit>
+			<trans-unit id="error.passwordDenylist" resname="error.passwordDenylist">
+				<source>The password is not accepted, because it is denied by configuration.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
