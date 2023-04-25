@@ -1,3 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/derhansen/add_pwd_policy/v/stable)](https://packagist.org/packages/derhansen/sf_event_mgt)
+[![Monthly Downloads](https://poser.pugx.org/derhansen/add_pwd_policy/d/monthly)](https://packagist.org/packages/derhansen/add_pwd_policy)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
+
 # Additional Password Policy validators for TYPO3 CMS
 
 This extension for TYPO3 CMS contains additional Password Policy validators for
