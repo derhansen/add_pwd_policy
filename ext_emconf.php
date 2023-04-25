@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Additional Password Policy validators',
-    'description' => 'Additional Password Policy validators for TYPO3 CMS',
+    'description' => 'Additional password validators for usage in TYPO3 password policies',
     'category' => 'be',
     'author' => 'Torben Hansen',
     'author_email' => 'derhansen@gmail.com',

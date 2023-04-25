@@ -1,7 +1,7 @@
 {
   "name": "derhansen/add_pwd_policy",
   "type": "typo3-cms-extension",
-  "description": "Additional Password Policy validators for TYPO3 CMS",
+  "description": "Additional password validators for usage in TYPO3 password policies",
   "homepage": "https://github.com/derhansen/add_pwd_policy",
   "support": {
     "issues": "https://github.com/derhansen/add_pwd_policy/issues"
