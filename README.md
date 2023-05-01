@@ -2,7 +2,6 @@
 [![Monthly Downloads](https://poser.pugx.org/derhansen/add_pwd_policy/d/monthly)](https://packagist.org/packages/derhansen/add_pwd_policy)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-
 # Additional Password Policy validators for TYPO3 CMS
 
 This extension for TYPO3 CMS contains additional Password Policy validators for
@@ -69,6 +68,11 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['default']['validators'][
     'excludeActions' => [],
 ];
 ```
+
+### PRs welcome
+
+If you have created a custom password validator, feel free to provide it as
+pull request to this repository.
 
 ## Credits
 
