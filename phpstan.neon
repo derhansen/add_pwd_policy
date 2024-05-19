@@ -1,9 +1,0 @@
-parameters:
-    level: 9
-    paths:
-        - Classes/
-        - Configuration/
-
-    checkMissingIterableValueType: false
-    reportUnmatchedIgnoredErrors: true
-    checkGenericClassInNonGenericObjectType: false

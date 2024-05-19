@@ -21,9 +21,6 @@ class PwnedPasswordsService
     /**
      * Checks the given password against data breaches using the haveibeenpwned.com API
      * Returns the amount of times the password is found in the haveibeenpwned.com database
-     *
-     * @param string $password
-     * @return int
      */
     public function checkPassword(string $password): int
     {
