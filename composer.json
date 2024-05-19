@@ -24,9 +24,6 @@
     "typo3/cms-backend": "^12.4  || ^13.1",
     "typo3/cms-felogin": "^12.4  || ^13.1"
   },
-  "replace": {
-    "typo3-ter/add-pwd-policy": "self.version"
-  },
   "autoload": {
     "psr-4": {
       "Derhansen\\AddPwdPolicy\\": "Classes"
