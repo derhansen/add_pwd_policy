@@ -4,6 +4,7 @@
   "description": "Additional password validators for usage in TYPO3 password policies",
   "homepage": "https://github.com/derhansen/add_pwd_policy",
   "support": {
+		"docs": "https://github.com/derhansen/add_pwd_policy/blob/main/README.md",
     "issues": "https://github.com/derhansen/add_pwd_policy/issues"
   },
   "authors": [
