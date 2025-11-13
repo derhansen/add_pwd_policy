@@ -75,6 +75,10 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['passwordPolicies']['default']['validators'][
 If you have created a custom password validator, feel free to provide it as
 pull request to this repository.
 
+## Reporting a Vulnerability
+
+Please report vulnerabilities to [security@typo3.org](mailto:security@typo3.org).
+
 ## Credits
 
 ### Password file
