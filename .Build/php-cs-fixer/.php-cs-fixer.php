@@ -14,8 +14,6 @@ return (new \PhpCsFixer\Config())
     ->setRiskyAllowed(true)
     ->setRules([
         '@PER-CS:risky' => true,
-        '@PHP80Migration:risky' => true,
-        '@PHP81Migration' => true,
         'declare_strict_types' => true,
         'fully_qualified_strict_types' => true,
         'global_namespace_import' => [

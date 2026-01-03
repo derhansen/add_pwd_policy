@@ -4,7 +4,7 @@
   "description": "Additional password validators for usage in TYPO3 password policies",
   "homepage": "https://github.com/derhansen/add_pwd_policy",
   "support": {
-		"docs": "https://github.com/derhansen/add_pwd_policy/blob/main/README.md",
+    "docs": "https://github.com/derhansen/add_pwd_policy/blob/main/README.md",
     "issues": "https://github.com/derhansen/add_pwd_policy/issues"
   },
   "authors": [
@@ -20,10 +20,10 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^12.4 || ^13.1",
-    "typo3/cms-setup": "^12.4  || ^13.1",
-    "typo3/cms-backend": "^12.4  || ^13.1",
-    "typo3/cms-felogin": "^12.4  || ^13.1"
+    "typo3/cms-core": "^12.4 || ^13.1 || ^14.0",
+    "typo3/cms-setup": "^12.4 || ^13.1 || ^14.0",
+    "typo3/cms-backend": "^12.4 || ^13.1 || ^14.0",
+    "typo3/cms-felogin": "^12.4 || ^13.1 || ^14.0"
   },
   "autoload": {
     "psr-4": {

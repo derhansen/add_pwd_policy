@@ -16,7 +16,7 @@ used for password validation is extended with the users email-address.
 
 #### Description:
 
-This validator ensures, that the given password is not part of a known data
+This validator ensures that the given password is not part of a known data
 breach on haveibeenpwned.com
 
 #### Options:
@@ -83,5 +83,5 @@ Please report vulnerabilities to [security@typo3.org](mailto:security@typo3.org)
 
 ### Password file
 
-The included file with top 100.000 popular passwords has been downloaded
+The included file with the top 100.000 popular passwords has been downloaded
 from https://github.com/danielmiessler/SecLists
