@@ -25,19 +25,14 @@ class PwnedPasswordsService
         $hash = sha1($password);
         $request = GeneralUtility::makeInstance(RequestFactory::class);
 
-        try {
-            $response = $request->request(
-                'https://api.pwnedpasswords.com/range/' . substr($hash, 0, 5),
-                'GET',
-                [
-                    'User-Agent' => 'TYPO3 Extension add_pwd_policies',
-                ]
-            );
-            $results = $response->getBody()->getContents();
-        } catch (\Throwable) {
-            // Something went wrong with the request, return 0 and ignore check
-            return 0;
-        }
+        $response = $request->request(
+            'https://api.pwnedpasswords.com/range/' . substr($hash, 0, 5),
+            'GET',
+            [
+                'User-Agent' => 'TYPO3 Extension add_pwd_policies',
+            ]
+        );
+        $results = $response->getBody()->getContents();
 
         if (empty($results) || ($response->getStatusCode() !== 200)) {
             // Something went wrong with the request, return 0 and ignore check
@@ -45,7 +40,7 @@ class PwnedPasswordsService
         }
 
         if (preg_match('/' . preg_quote(substr($hash, 5)) . ':([0-9]+)/ism', $results, $matches) === 1) {
-            return (int)$matches[1];
+            return (int)($matches[1]);
         }
         return 0;
     }
