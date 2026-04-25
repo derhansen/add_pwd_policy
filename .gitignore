@@ -2,6 +2,7 @@
 .idea
 .php-cs-fixer.cache
 composer.lock
-.Build/*/public
-.Build/*/vendor
-.Build/*/composer.lock
+.Build/public
+.Build/vendor
+.Build/var
+.Build/composer.lock
