@@ -12,10 +12,11 @@ declare(strict_types=1);
 namespace Derhansen\AddPwdPolicy\Service;
 
 use TYPO3\CMS\Core\Http\RequestFactory;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class PwnedPasswordsService
 {
+    public function __construct(private readonly RequestFactory $requestFactory) {}
+
     /**
      * Checks the given password against data breaches using the haveibeenpwned.com API
      * Returns the amount of times the password is found in the haveibeenpwned.com database
@@ -23,9 +24,8 @@ class PwnedPasswordsService
     public function checkPassword(string $password): int
     {
         $hash = sha1($password);
-        $request = GeneralUtility::makeInstance(RequestFactory::class);
 
-        $response = $request->request(
+        $response = $this->requestFactory->request(
             'https://api.pwnedpasswords.com/range/' . substr($hash, 0, 5),
             'GET',
             [

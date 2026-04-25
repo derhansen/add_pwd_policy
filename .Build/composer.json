@@ -1,38 +1,39 @@
 {
-  "name": "derhansen/add_pwd_policy_composer_v14",
-  "description": "composer.json for TYPO3 v14 build",
-  "keywords": [
-    "TYPO3 CMS",
-    "security",
-    "password policy",
-    "password validators"
-  ],
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../../"
-    }
-  ],
-  "require": {
-    "typo3/cms-core": "^14.3",
-    "typo3/cms-setup": "^14.3",
-    "typo3/cms-backend": "^14.3",
-    "typo3/cms-felogin": "^14.3",
-    "derhansen/add_pwd_policy": "@dev"
-  },
-  "require-dev": {
-    "typo3/cms-composer-installers": "^5.0",
-    "typo3/testing-framework": "^9.0.0",
-    "friendsofphp/php-cs-fixer": "^3.49",
-    "phpstan/phpstan": "^2.1",
-    "phpstan/extension-installer": "^1.1"
-  },
-  "config": {
-    "lock": false,
-    "allow-plugins": {
-      "typo3/class-alias-loader": true,
-      "typo3/cms-composer-installers": true,
-      "phpstan/extension-installer": true
-    }
-  }
+	"name": "derhansen/add_pwd_policy_composer_v14",
+	"description": "composer.json for TYPO3 v14 build",
+	"keywords": [
+		"TYPO3 CMS",
+		"security",
+		"password policy",
+		"password validators"
+	],
+	"repositories": [
+		{
+			"type": "path",
+			"url": "../../"
+		}
+	],
+	"require": {
+		"typo3/cms-core": "^14.3",
+		"typo3/cms-setup": "^14.3",
+		"typo3/cms-backend": "^14.3",
+		"typo3/cms-felogin": "^14.3",
+		"derhansen/add_pwd_policy": "@dev"
+	},
+	"require-dev": {
+		"typo3/cms-composer-installers": "^5.0",
+		"typo3/testing-framework": "^9.0.0",
+		"friendsofphp/php-cs-fixer": "^3.49",
+		"phpstan/phpstan": "^2.1",
+		"saschaegerer/phpstan-typo3": "^3.0",
+		"phpstan/extension-installer": "^1.1"
+	},
+	"config": {
+		"lock": false,
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true,
+			"phpstan/extension-installer": true
+		}
+	}
 }
