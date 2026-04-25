@@ -16,8 +16,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class PwnedPasswordsService
 {
-    private const API_URL = 'https://api.pwnedpasswords.com/range/';
-
     /**
      * Checks the given password against data breaches using the haveibeenpwned.com API
      * Returns the amount of times the password is found in the haveibeenpwned.com database
@@ -27,7 +25,7 @@ class PwnedPasswordsService
         $hash = sha1($password);
         $request = GeneralUtility::makeInstance(RequestFactory::class);
         $response = $request->request(
-            self::API_URL . substr($hash, 0, 5),
+            'https://api.pwnedpasswords.com/range/' . substr($hash, 0, 5),
             'GET',
             [
                 'User-Agent' => 'TYPO3 Extension add_pwd_policies',

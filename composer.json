@@ -1,38 +1,46 @@
 {
-  "name": "derhansen/add_pwd_policy",
-  "type": "typo3-cms-extension",
-  "description": "Additional password validators for usage in TYPO3 password policies",
-  "homepage": "https://github.com/derhansen/add_pwd_policy",
-  "support": {
-    "docs": "https://github.com/derhansen/add_pwd_policy/blob/main/README.md",
-    "issues": "https://github.com/derhansen/add_pwd_policy/issues"
-  },
-  "authors": [
-    {
-      "name": "Torben Hansen",
-      "email": "derhansen@gmail.com",
-      "homepage": "https://www.derhansen.com",
-      "role": "Developer"
-    }
-  ],
-  "keywords": ["TYPO3 CMS", "security", "password policy", "password validators"],
-  "license": [
-    "GPL-2.0-or-later"
-  ],
-  "require": {
-    "typo3/cms-core": "^12.4 || ^13.1 || ^14.0",
-    "typo3/cms-setup": "^12.4 || ^13.1 || ^14.0",
-    "typo3/cms-backend": "^12.4 || ^13.1 || ^14.0",
-    "typo3/cms-felogin": "^12.4 || ^13.1 || ^14.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Derhansen\\AddPwdPolicy\\": "Classes"
-    }
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "add_pwd_policy"
-    }
-  }
+	"name": "derhansen/add_pwd_policy",
+	"type": "typo3-cms-extension",
+	"description": "Additional Password Policy validators - Additional password validators for usage in TYPO3 password policies",
+	"homepage": "https://github.com/derhansen/add_pwd_policy",
+	"support": {
+		"docs": "https://github.com/derhansen/add_pwd_policy/blob/main/README.md",
+		"issues": "https://github.com/derhansen/add_pwd_policy/issues"
+	},
+	"authors": [
+		{
+			"name": "Torben Hansen",
+			"email": "derhansen@gmail.com",
+			"homepage": "https://www.derhansen.com",
+			"role": "Developer"
+		}
+	],
+	"keywords": [
+		"TYPO3 CMS",
+		"security",
+		"password policy",
+		"password validators"
+	],
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"require": {
+		"typo3/cms-core": "^14.3",
+		"typo3/cms-setup": "^14.3",
+		"typo3/cms-backend": "^14.3",
+		"typo3/cms-felogin": "^14.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Derhansen\\AddPwdPolicy\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "add_pwd_policy",
+			"Package": {
+				"providesPackages": []
+			}
+		}
+	}
 }

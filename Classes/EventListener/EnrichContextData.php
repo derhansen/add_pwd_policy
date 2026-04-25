@@ -12,10 +12,10 @@ declare(strict_types=1);
 namespace Derhansen\AddPwdPolicy\EventListener;
 
 use TYPO3\CMS\Backend\Authentication\PasswordReset;
+use TYPO3\CMS\Backend\Controller\SetupModuleController;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
 use TYPO3\CMS\Core\PasswordPolicy\Event\EnrichPasswordValidationContextDataEvent;
 use TYPO3\CMS\FrontendLogin\Controller\PasswordRecoveryController;
-use TYPO3\CMS\Setup\Controller\SetupModuleController;
 
 class EnrichContextData
 {
