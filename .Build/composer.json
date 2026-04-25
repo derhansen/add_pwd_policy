@@ -14,10 +14,10 @@
     }
   ],
   "require": {
-    "typo3/cms-core": "^14.0",
-    "typo3/cms-setup": "^14.0",
-    "typo3/cms-backend": "^14.0",
-    "typo3/cms-felogin": "^14.0",
+    "typo3/cms-core": "^14.3",
+    "typo3/cms-setup": "^14.3",
+    "typo3/cms-backend": "^14.3",
+    "typo3/cms-felogin": "^14.3",
     "derhansen/add_pwd_policy": "@dev"
   },
   "require-dev": {
