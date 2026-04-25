@@ -23,17 +23,13 @@
 	"require-dev": {
 		"typo3/cms-composer-installers": "^5.0",
 		"typo3/testing-framework": "^9.0.0",
-		"friendsofphp/php-cs-fixer": "^3.49",
-		"phpstan/phpstan": "^2.1",
-		"saschaegerer/phpstan-typo3": "^3.0",
-		"phpstan/extension-installer": "^1.1"
+		"friendsofphp/php-cs-fixer": "^3.49"
 	},
 	"config": {
 		"lock": false,
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true,
-			"phpstan/extension-installer": true
+			"typo3/cms-composer-installers": true
 		}
 	}
 }
